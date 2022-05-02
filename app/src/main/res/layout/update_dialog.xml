@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_dialog_confirm"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal"
+            android:text="提示"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:text="自己创建的星球要坚持点亮哦！先记录下自己离开的原因吧~"/>
+
+        <EditText
+            android:id="@+id/edt_reason"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:inputType="text"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:gravity="top"
+            android:paddingTop="15dp"
+            android:paddingStart="15dp"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edit_style"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor,RtlSymmetry"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dialog_confirm_cancel"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:background="@drawable/btn_selector"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/dialog_confirm_sure"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:text="确认"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:background="@drawable/btn_selector"
+                style="?android:attr/buttonBarButtonStyle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

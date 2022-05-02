@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@color/white"
+    android:foreground="@color/cardview_shadow_end_color"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="false"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    tools:context=".ui.PlanetInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/to_be_light"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_planetInfo"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:foreground="@color/cardview_shadow_end_color"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="false"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_first"
+                    android:layout_width="wrap_content"
+                    android:text="名称："
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_first_name"
+                    android:textSize="13sp"
+                    android:text="当前星球"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@id/tv_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_second"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/tv_first"
+                    android:text="预计点亮日期："
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_second_date"
+                    android:textSize="13sp"
+                    android:layout_toEndOf="@id/tv_second"
+                    android:text="2022年5月3日"
+                    android:layout_below="@+id/tv_first"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_third"
+                    android:layout_width="wrap_content"
+                    android:text="已专注："
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    android:textSize="13sp"
+                    android:layout_below="@id/tv_second"
+                    android:layout_height="wrap_content"/>
+                
+                <TextView
+                    android:id="@+id/tv_third_conTime"
+                    android:layout_width="wrap_content"
+                    android:textSize="13sp"
+                    android:text="10min"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/tv_second"
+                    android:layout_toEndOf="@id/tv_third"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btn_change"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    android:background="@drawable/btn_selector"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/change"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

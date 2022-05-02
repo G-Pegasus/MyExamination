@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Examination</string>
+    <string name="todo">TODO</string>
+    <string name="startApp">开始体验</string>
+    <string name="plan_planet">规划星球</string>
+    <string name="mine">我的</string>
+    <string name="universe">宇宙</string>
+    <string name="timer">计时器</string>
+    <string name="slogan">宇宙为你闪烁</string>
+    <string name="planet_name">星球名称</string>
+    <string name="to_be_light">待点亮</string>
+    <string name="creat_planet">创建星球</string>
+    <string name="change">切换</string>
+    <string name="add_planet">新增星球</string>
+    <string name="name">名称</string>
+    <string name="remark">备注</string>
+    <string name="create">创建</string>
+    <string name="update">修改</string>
+    <string name="delete_planet">删除星球</string>
+</resources>

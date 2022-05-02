@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="50dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_1"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:foreground="@color/cardview_shadow_end_color"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/me_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/todo"
+                android:src="@mipmap/planet_1" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_marginStart="40dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="35dp"
+                android:layout_toEndOf="@+id/me_image"
+                android:text="小星星"/>
+
+            <TextView
+                android:id="@+id/signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@+id/me_image"
+                android:layout_below="@+id/username"
+                android:text="小星要努力变强！"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@+id/me_image"
+                android:gravity="center"
+                android:layout_marginTop="40dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="时间历程"
+                    style="?android:attr/buttonBarButtonStyle" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="成就"
+                    style="?android:attr/buttonBarButtonStyle" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="待点亮"
+                    style="?android:attr/buttonBarButtonStyle" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_2"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/card_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:foreground="@color/cardview_shadow_end_color"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginStart="15dp"
+            android:text="意见反馈"
+            tools:ignore="RtlHardcoded" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_3"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/card_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:foreground="@color/cardview_shadow_end_color"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:textSize="15sp"
+            android:text="设置"
+            tools:ignore="RtlHardcoded" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
