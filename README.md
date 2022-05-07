@@ -14,7 +14,7 @@
 #### （2）点击星球图标外侧的计时圈
 点击计时圈会弹出一个自定义Dialog，可以输入专注时间（分钟），点击确定后开始计时，同时最上方的TextView开始变化，即实现倒计时功能。TextView的变化由Timer + Handler消息传递实现，
 在倒计时结束后，会启动Service服务，在服务中创建通知，推送到手机前台的状态栏。计时圈是一个自定义View，主要由最外层的圆，圆上面进度的弧度和进度上的小圆组成。小圆倒计时的转动
-通过数学计算（圆弧度的计算公式）以及动画Animation得到。并在自定义View中定义一个接口，用于实现倒计时结束后的逻辑。
+通过数学计算（圆弧度的计算公式）以及动画Animation得到。并在自定义View中定义一个接口，用于实现倒计时结束后的逻辑。  
 ![image](https://github.com/liutongji/MyExamination/blob/master/timer.gif)  
 ![image](https://github.com/liutongji/MyExamination/blob/master/service.gif)  
 ### 4.新增星球页面主要逻辑
